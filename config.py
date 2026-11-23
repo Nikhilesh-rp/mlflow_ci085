@@ -1,6 +1,6 @@
 """Shared settings for the Champion-Challenger mini project.
 
-STUDENT_USN = "1MS25CI104"
+STUDENT_USN = "1MS25CI085"
 
 TRACKING_URI = "http://127.0.0.1:5000"
 EXPERIMENT_NAME = "hf-sentiment-champion-challenger"
