@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MLflow Champion–Challenger Evaluation | USN 1MS25CI104</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    code, pre {
+      font-family: 'JetBrains Mono', monospace;
+    }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- Header Banner -->
+  <header class="border-b border-slate-800 bg-slate-950/70 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center space-x-3">
+        <div class="h-10 w-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-sky-400 flex items-center justify-center font-bold text-lg text-white shadow-lg shadow-indigo-500/20">
+          ML
+        </div>
+        <div>
+          <h1 class="text-lg font-bold text-white tracking-tight flex items-center gap-2">
+            Champion–Challenger Model Comparison
+            <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">MLflow & HF</span>
+          </h1>
+          <p class="text-xs text-slate-400">Student USN: <span class="font-mono text-slate-300 font-semibold">1MS25CI104</span> · Skill Lab (MLOps with MLflow)</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="https://github.com/Nikhilesh-rp/mlflow_ci085" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-medium px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-colors shadow-sm">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+
+    <!-- Hero / Decision Banner -->
+    <section class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-emerald-950/60 via-slate-900 to-indigo-950/60 border border-emerald-500/30 p-6 md:p-8 shadow-2xl">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 relative z-10">
+        <div class="space-y-3">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-semibold uppercase tracking-wider">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            Evaluation Verdict: Challenger Promoted
+          </div>
+          <h2 class="text-2xl md:text-3xl font-extrabold text-white">
+            Model B (<span class="text-emerald-400">roberta-large</span>) is the new Champion!
+          </h2>
+          <p class="text-sm md:text-base text-slate-300 max-w-3xl leading-relaxed">
+            Evaluated on <strong class="text-white">200 sentences</strong> from SST-2 validation split. Challenger beat the Champion by <strong class="text-emerald-400">+1.01 pp</strong> in Macro-F1 (exceeding the strict 1.0 pp margin) while staying within the <strong class="text-white">10× latency guardrail</strong> (8.60×).
+          </p>
+        </div>
+        <div class="flex-shrink-0 bg-slate-900/90 border border-slate-700/80 rounded-xl p-4 shadow-xl text-center md:text-right min-w-[200px]">
+          <p class="text-xs uppercase font-medium text-slate-400">MLflow Model Registry</p>
+          <p class="text-lg font-bold text-white mt-1">models:/sentiment-model</p>
+          <div class="mt-3 flex items-center justify-center md:justify-end gap-2 text-xs font-mono">
+            <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">v2: @champion</span>
+            <span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">v1: @challenger</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Metrics Grid -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="bg-slate-800/60 backdrop-blur border border-slate-700/60 rounded-xl p-5 hover:border-indigo-500/40 transition-all">
+        <p class="text-xs font-medium uppercase text-slate-400">Primary Metric: Macro-F1</p>
+        <div class="mt-2 flex items-baseline justify-between">
+          <span class="text-2xl font-bold text-emerald-400">0.9444</span>
+          <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">+1.01 pp</span>
+        </div>
+        <p class="text-xs text-slate-400 mt-2">Model A: 0.9343 &nbsp;|&nbsp; Margin: &ge; 1.0 pp</p>
+      </div>
+
+      <div class="bg-slate-800/60 backdrop-blur border border-slate-700/60 rounded-xl p-5 hover:border-indigo-500/40 transition-all">
+        <p class="text-xs font-medium uppercase text-slate-400">Accuracy</p>
+        <div class="mt-2 flex items-baseline justify-between">
+          <span class="text-2xl font-bold text-white">94.50%</span>
+          <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">+1.00%</span>
+        </div>
+        <p class="text-xs text-slate-400 mt-2">Model A: 93.50% (189/200 vs 187/200)</p>
+      </div>
+
+      <div class="bg-slate-800/60 backdrop-blur border border-slate-700/60 rounded-xl p-5 hover:border-indigo-500/40 transition-all">
+        <p class="text-xs font-medium uppercase text-slate-400">Avg Latency (Guardrail)</p>
+        <div class="mt-2 flex items-baseline justify-between">
+          <span class="text-2xl font-bold text-amber-300">223.2 ms</span>
+          <span class="text-xs font-mono text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">8.60×</span>
+        </div>
+        <p class="text-xs text-slate-400 mt-2">Model A: 25.96 ms &nbsp;|&nbsp; Guardrail &le; 10×</p>
+      </div>
+
+      <div class="bg-slate-800/60 backdrop-blur border border-slate-700/60 rounded-xl p-5 hover:border-indigo-500/40 transition-all">
+        <p class="text-xs font-medium uppercase text-slate-400">Disagreements</p>
+        <div class="mt-2 flex items-baseline justify-between">
+          <span class="text-2xl font-bold text-sky-400">18 / 200</span>
+          <span class="text-xs font-mono text-sky-400 bg-sky-500/10 px-2 py-0.5 rounded border border-sky-500/20">Net +2 for B</span>
+        </div>
+        <p class="text-xs text-slate-400 mt-2">B correct: 10 &nbsp;|&nbsp; A correct: 8</p>
+      </div>
+    </section>
+
+    <!-- Side-by-Side Model Comparison -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Model A -->
+      <div class="bg-slate-800/40 border border-slate-700/80 rounded-2xl p-6 relative overflow-hidden">
+        <div class="flex items-center justify-between">
+          <div>
+            <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-700 text-slate-300 border border-slate-600">Model A · Previous Champion</span>
+            <h3 class="text-lg font-bold text-white mt-2">distilbert-base-uncased-finetuned-sst-2-english</h3>
+          </div>
+          <span class="text-xs font-mono px-2 py-1 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">@challenger</span>
+        </div>
+        <div class="mt-4 grid grid-cols-2 gap-3 text-xs">
+          <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800">
+            <span class="text-slate-400">Parameters:</span> <strong class="text-white block text-sm mt-0.5">~67 Million</strong>
+          </div>
+          <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800">
+            <span class="text-slate-400">Accuracy:</span> <strong class="text-white block text-sm mt-0.5">0.9350 (93.5%)</strong>
+          </div>
+          <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800">
+            <span class="text-slate-400">Macro-F1:</span> <strong class="text-white block text-sm mt-0.5">0.9343</strong>
+          </div>
+          <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800">
+            <span class="text-slate-400">Avg Latency:</span> <strong class="text-emerald-400 block text-sm mt-0.5">25.96 ms/item</strong>
+          </div>
+        </div>
+        <p class="text-xs text-slate-400 mt-4 leading-relaxed">
+          Lightweight and lightning fast. Ideal for resource-constrained or low-latency environments, but can stumble on complex double-negatives and subtle sarcasm.
+        </p>
+      </div>
+
+      <!-- Model B -->
+      <div class="bg-slate-800/40 border-2 border-indigo-500/40 rounded-2xl p-6 relative overflow-hidden shadow-lg shadow-indigo-500/5">
+        <div class="flex items-center justify-between">
+          <div>
+            <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">Model B · New Champion</span>
+            <h3 class="text-lg font-bold text-white mt-2">siebert/sentiment-roberta-large-english</h3>
+          </div>
+          <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">@champion</span>
+        </div>
+        <div class="mt-4 grid grid-cols-2 gap-3 text-xs">
+          <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800">
+            <span class="text-slate-400">Parameters:</span> <strong class="text-white block text-sm mt-0.5">~355 Million (~5.3×)</strong>
+          </div>
+          <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800">
+            <span class="text-slate-400">Accuracy:</span> <strong class="text-emerald-400 block text-sm mt-0.5">0.9450 (94.5%)</strong>
+          </div>
+          <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800">
+            <span class="text-slate-400">Macro-F1:</span> <strong class="text-emerald-400 block text-sm mt-0.5">0.9444 (+1.01 pp)</strong>
+          </div>
+          <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800">
+            <span class="text-slate-400">Avg Latency:</span> <strong class="text-amber-400 block text-sm mt-0.5">223.20 ms/item (8.6×)</strong>
+          </div>
+        </div>
+        <p class="text-xs text-slate-400 mt-4 leading-relaxed">
+          Significantly higher capacity. Demonstrates nuanced sentiment comprehension on contrastive clauses and sarcasm, passing all threshold guardrails.
+        </p>
+      </div>
+    </section>
+
+    <!-- Visual Artifacts & Confusion Matrix -->
+    <section class="space-y-4">
+      <div class="flex items-center justify-between">
+        <h3 class="text-xl font-bold text-white">Evaluation Artifacts & Visualizations</h3>
+        <span class="text-xs text-slate-400">Generated from outputs/</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-slate-800/40 border border-slate-700/70 rounded-xl p-4 flex flex-col items-center">
+          <h4 class="text-sm font-semibold text-slate-300 mb-3 self-start">Metrics Comparison (Accuracy, F1, Precision, Recall)</h4>
+          <img src="./outputs/compare_metrics.png" alt="Metrics Comparison" class="rounded-lg shadow max-h-80 object-contain w-full bg-slate-900/50 p-2">
+        </div>
+        <div class="bg-slate-800/40 border border-slate-700/70 rounded-xl p-4 flex flex-col items-center">
+          <h4 class="text-sm font-semibold text-slate-300 mb-3 self-start">Inference Latency Comparison</h4>
+          <img src="./outputs/compare_latency.png" alt="Latency Comparison" class="rounded-lg shadow max-h-80 object-contain w-full bg-slate-900/50 p-2">
+        </div>
+        <div class="bg-slate-800/40 border border-slate-700/70 rounded-xl p-4 flex flex-col items-center">
+          <h4 class="text-sm font-semibold text-slate-300 mb-3 self-start">Confusion Matrix: Model A (DistilBERT)</h4>
+          <img src="./outputs/confusion_matrix_distilbert-sst2.png" alt="Confusion Matrix Model A" class="rounded-lg shadow max-h-80 object-contain w-full bg-slate-900/50 p-2">
+        </div>
+        <div class="bg-slate-800/40 border border-slate-700/70 rounded-xl p-4 flex flex-col items-center">
+          <h4 class="text-sm font-semibold text-slate-300 mb-3 self-start">Confusion Matrix: Model B (RoBERTa Large)</h4>
+          <img src="./outputs/confusion_matrix_roberta-large.png" alt="Confusion Matrix Model B" class="rounded-lg shadow max-h-80 object-contain w-full bg-slate-900/50 p-2">
+        </div>
+      </div>
+    </section>
+
+    <!-- Disagreement Qualitative Analysis -->
+    <section class="bg-slate-800/40 border border-slate-700/80 rounded-2xl p-6 space-y-4">
+      <div>
+        <h3 class="text-xl font-bold text-white">Qualitative Analysis: Key Model Disagreements</h3>
+        <p class="text-xs text-slate-400 mt-1">
+          Detailed inspection of 5 sample sentences out of the 18 disagreement cases (from <code class="text-indigo-400">outputs/disagreements.csv</code>).
+        </p>
+      </div>
+
+      <div class="overflow-x-auto rounded-xl border border-slate-700/80">
+        <table class="w-full text-left text-xs text-slate-300">
+          <thead class="bg-slate-900 text-slate-400 uppercase font-semibold text-[11px] border-b border-slate-700">
+            <tr>
+              <th class="px-4 py-3">#</th>
+              <th class="px-4 py-3">Sentence</th>
+              <th class="px-3 py-3">Gold</th>
+              <th class="px-3 py-3">Model A</th>
+              <th class="px-3 py-3">Model B</th>
+              <th class="px-3 py-3">Winner</th>
+              <th class="px-4 py-3">Linguistic Commentary</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800 bg-slate-950/40">
+            <tr class="hover:bg-slate-800/30">
+              <td class="px-4 py-3 font-mono text-slate-500">1</td>
+              <td class="px-4 py-3 italic font-serif text-slate-200">"oh come on ."</td>
+              <td class="px-3 py-3 font-mono font-bold text-rose-400">neg</td>
+              <td class="px-3 py-3 font-mono text-emerald-400">pos</td>
+              <td class="px-3 py-3 font-mono font-bold text-rose-400 bg-rose-500/10 rounded">neg</td>
+              <td class="px-3 py-3"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-semibold">Model B</span></td>
+              <td class="px-4 py-3 text-slate-400">Short text with no lexical sentiment words. Negativity is purely conveyed via exasperated tone, which RoBERTa captures.</td>
+            </tr>
+            <tr class="hover:bg-slate-800/30">
+              <td class="px-4 py-3 font-mono text-slate-500">2</td>
+              <td class="px-4 py-3 italic font-serif text-slate-200">"a bloated gasbag thesis grotesquely impressed by its own gargantuan aura of self-importance ..."</td>
+              <td class="px-3 py-3 font-mono font-bold text-rose-400">neg</td>
+              <td class="px-3 py-3 font-mono text-emerald-400">pos</td>
+              <td class="px-3 py-3 font-mono font-bold text-rose-400 bg-rose-500/10 rounded">neg</td>
+              <td class="px-3 py-3"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-semibold">Model B</span></td>
+              <td class="px-4 py-3 text-slate-400">Insulting rare vocabulary. Model A is misled by the keyword "impressed", whereas Model B parses the sarcastic full clause.</td>
+            </tr>
+            <tr class="hover:bg-slate-800/30">
+              <td class="px-4 py-3 font-mono text-slate-500">3</td>
+              <td class="px-4 py-3 italic font-serif text-slate-200">"writer/director joe carnahan 's grimy crime drama is a manual of precinct cliches , but it moves fast enough to cover its clunky dialogue and lapses in logic ."</td>
+              <td class="px-3 py-3 font-mono font-bold text-emerald-400">pos</td>
+              <td class="px-3 py-3 font-mono text-rose-400">neg</td>
+              <td class="px-3 py-3 font-mono font-bold text-emerald-400 bg-emerald-500/10 rounded">pos</td>
+              <td class="px-3 py-3"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-semibold">Model B</span></td>
+              <td class="px-4 py-3 text-slate-400">Heavy negative descriptors ("cliches", "clunky", "lapses"), but the contrastive "but it moves fast enough" flips the sentiment. B handles contrast.</td>
+            </tr>
+            <tr class="hover:bg-slate-800/30">
+              <td class="px-4 py-3 font-mono text-slate-500">4</td>
+              <td class="px-4 py-3 italic font-serif text-slate-200">"fun , flip and terribly hip bit of cinematic entertainment ."</td>
+              <td class="px-3 py-3 font-mono font-bold text-emerald-400">pos</td>
+              <td class="px-3 py-3 font-mono font-bold text-emerald-400 bg-emerald-500/10 rounded">pos</td>
+              <td class="px-3 py-3 font-mono text-rose-400">neg</td>
+              <td class="px-3 py-3"><span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-semibold">Model A</span></td>
+              <td class="px-4 py-3 text-slate-400">"terribly" is functioning as an intensifier ("very hip") rather than criticism. Model B mistakenly treats "terribly" as negative.</td>
+            </tr>
+            <tr class="hover:bg-slate-800/30">
+              <td class="px-4 py-3 font-mono text-slate-500">5</td>
+              <td class="px-4 py-3 italic font-serif text-slate-200">"it 's a bit disappointing that it only manages to be decent instead of dead brilliant ."</td>
+              <td class="px-3 py-3 font-mono font-bold text-rose-400">neg</td>
+              <td class="px-3 py-3 font-mono font-bold text-rose-400 bg-rose-500/10 rounded">neg</td>
+              <td class="px-3 py-3 font-mono text-emerald-400">pos</td>
+              <td class="px-3 py-3"><span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-semibold">Model A</span></td>
+              <td class="px-4 py-3 text-slate-400">Positive tokens ("decent", "brilliant") within overall negative evaluation. Model B gets misled by positive adjectives, whereas Model A latches onto "disappointing".</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Reproducibility & Architecture -->
+    <section class="bg-slate-800/40 border border-slate-700/80 rounded-2xl p-6">
+      <h3 class="text-xl font-bold text-white">Project Architecture & Reproducibility</h3>
+      <p class="text-xs text-slate-400 mt-1 mb-4">
+        All models are wrapped with <code class="text-indigo-400">mlflow.pyfunc.PythonModel</code> inside <code class="text-indigo-400">hf_wrapper.py</code>, enabling zero-code Hugging Face inference via standard MLflow URI aliases.
+      </p>
+
+      <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 overflow-x-auto text-xs font-mono text-slate-300 leading-relaxed">
+        <span class="text-slate-500"># 1. Start local MLflow server</span><br>
+        <span class="text-emerald-400">python</span> -m mlflow server --host 127.0.0.1 --port 5000 --backend-store-uri sqlite:///mlflow.db<br><br>
+        <span class="text-slate-500"># 2. Run evaluation on 200 SST-2 validation sentences</span><br>
+        <span class="text-emerald-400">python</span> evaluate.py<br><br>
+        <span class="text-slate-500"># 3. Register models & set @champion / @challenger aliases based on rule</span><br>
+        <span class="text-emerald-400">python</span> register_champion.py<br><br>
+        <span class="text-slate-500"># 4. Predict using champion model loaded strictly from alias</span><br>
+        <span class="text-emerald-400">python</span> predict_from_mlflow.py
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-slate-800 py-6 mt-12 text-center text-xs text-slate-500">
+    <p>Champion–Challenger MLflow Project &nbsp;·&nbsp; USN 1MS25CI104 &nbsp;·&nbsp; Deployed via GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
