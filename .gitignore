@@ -1,0 +1,10 @@
+mlruns/
+mlartifacts/
+mlflow.db
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.safetensors
+*.bin
+.idea/

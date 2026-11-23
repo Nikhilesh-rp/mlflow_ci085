@@ -1,0 +1,11 @@
+{
+  "run_name": "A_sentiment_distilbert-sst2",
+  "hf_model_id": "distilbert-base-uncased-finetuned-sst-2-english",
+  "accuracy": 0.935,
+  "macro_f1": 0.9342753861321065,
+  "macro_precision": 0.9358766233766234,
+  "macro_recall": 0.9331081762274422,
+  "neutral_predictions": 0,
+  "avg_latency_ms": 25.961152000018046,
+  "total_inference_s": 5.192230400003609
+}

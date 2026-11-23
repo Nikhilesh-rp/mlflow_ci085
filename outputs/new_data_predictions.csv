@@ -1,0 +1,9 @@
+text,expected,prediction,score,alias,model_version,hf_model_id
+The canteen biryani today was honestly the best I've had all semester.,positive,positive,0.9988,champion,2,siebert/sentiment-roberta-large-english
+I waited forty minutes for the bus and it never showed up.,negative,negative,0.9995,champion,2,siebert/sentiment-roberta-large-english
+"The new phone's battery easily lasts two full days, I'm impressed.",positive,positive,0.9988,champion,2,siebert/sentiment-roberta-large-english
+The lecture slides were so cluttered that I couldn't follow anything.,negative,negative,0.9995,champion,2,siebert/sentiment-roberta-large-english
+"Not bad at all, the sequel is even funnier than the first one.",positive,positive,0.9988,champion,2,siebert/sentiment-roberta-large-english
+The app keeps crashing every time I try to upload my assignment.,negative,negative,0.9995,champion,2,siebert/sentiment-roberta-large-english
+Our team's demo went smoothly and the panel loved the idea.,positive,positive,0.9988,champion,2,siebert/sentiment-roberta-large-english
+I expected a lot more from this restaurant given all the hype.,negative,negative,0.9995,champion,2,siebert/sentiment-roberta-large-english

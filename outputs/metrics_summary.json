@@ -1,0 +1,37 @@
+{
+  "experiment": "hf-sentiment-champion-challenger",
+  "eval_samples": 200,
+  "rule": {
+    "primary_metric": "macro_f1",
+    "direction": "higher is better",
+    "margin": 0.01,
+    "max_latency_ratio": 10.0
+  },
+  "A": {
+    "run_name": "A_sentiment_distilbert-sst2",
+    "hf_model_id": "distilbert-base-uncased-finetuned-sst-2-english",
+    "accuracy": 0.935,
+    "macro_f1": 0.9342753861321065,
+    "macro_precision": 0.9358766233766234,
+    "macro_recall": 0.9331081762274422,
+    "neutral_predictions": 0,
+    "avg_latency_ms": 25.961152000018046,
+    "total_inference_s": 5.192230400003609
+  },
+  "B": {
+    "run_name": "B_sentiment_roberta-large",
+    "hf_model_id": "siebert/sentiment-roberta-large-english",
+    "accuracy": 0.945,
+    "macro_f1": 0.9443868651887055,
+    "macro_precision": 0.9460227272727273,
+    "macro_recall": 0.9431898376852506,
+    "neutral_predictions": 0,
+    "avg_latency_ms": 223.19990700001654,
+    "total_inference_s": 44.63998140000331
+  },
+  "delta_primary_metric": 0.010111479056599038,
+  "latency_ratio_b_over_a": 8.597457732224726,
+  "disagreements": 18,
+  "winner": "B",
+  "decision_reason": "Challenger beats Champion by 1.01 pp >= 1.0 pp margin"
+}
